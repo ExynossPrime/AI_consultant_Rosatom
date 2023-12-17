@@ -43,7 +43,7 @@ def start(message):
 def get_text_messages(message):
 
     if message.text == '👋 Поздороваться':
-        bot.send_message(message.from_user.id, '❓ Задайте интересующий вас вопрос', reply_markup=markup) #ответ бота
+        bot.send_message(message.from_user.id, '❓ Задайте интересующий вас вопрос') #ответ бота
 
     text = message.text
     messages.append(HumanMessage(content=text))
